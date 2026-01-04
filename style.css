@@ -1,83 +1,73 @@
+/* --- MODERN SPACIOUS STYLE --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    background-color: #ffffff;
+    color: #2d3436;
 }
 
-.container {
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-}
+.container { width: 80%; max-width: 1200px; margin: auto; }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 40px 0;
-    border-bottom: #e8491d 5px solid;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-h2 {
-    color: #333;
-    margin-top: 20px;
-    border-bottom: 2px solid #e8491d;
-    display: inline-block;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-    margin-top: 20px;
-}
-
-ul li {
-    background: #fff;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-left: #e8491d 8px solid;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Table Design */
-.market-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background: #fff;
-}
-
-.market-table th {
-    background: #333;
+/* HERO - Using a colorful Blue/Steel Industrial Look (NO DUSTBINS) */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(41, 128, 185, 0.7)), 
+                url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1500'); 
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 12px;
-    text-align: left;
-}
-
-.market-table td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-    font-weight: bold;
-}
-
-footer {
-    padding: 30px;
-    margin-top: 40px;
-    color: #fff;
-    background-color: #333;
+    padding: 150px 0;
     text-align: center;
 }
 
-a {
-    color: #e8491d;
+.hero h1 { font-size: 4rem; letter-spacing: 5px; margin-bottom: 10px; }
+.proprietor { font-size: 1.4rem; color: #f1c40f; margin-bottom: 5px; }
+.main-title { font-size: 2rem; margin-bottom: 20px; }
+.location { font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px; }
+
+/* Buttons */
+.hero-actions { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.btn {
+    padding: 15px 40px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.btn-whatsapp { background-color: #25d366; color: white; }
+.btn-call { background-color: #ffffff; color: #2980b9; }
+
+/* Spacious Sections */
+.section-padding { padding: 100px 0; }
+.section-heading { text-align: center; font-size: 2.5rem; margin-bottom: 60px; color: #2c3e50; }
+
+/* Colorful Cards */
+.scrap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.scrap-card {
+    background: #fdfdfd;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-top: 5px solid #3498db;
+    transition: transform 0.3s;
+}
+.scrap-card:hover { transform: translateY(-10px); }
+.scrap-icon { font-size: 3rem; display: block; margin-bottom: 20px; }
+
+/* Modern Table */
+.price-area { background-color: #f4f7f6; }
+.table-container { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.modern-table { width: 100%; border-collapse: collapse; }
+.modern-table th { background-color: #2980b9; color: white; padding: 20px; text-align: left; }
+.modern-table td { padding: 20px; border-bottom: 1px solid #eee; font-weight: 600; }
+
+/* Footer */
+.contact-section { background: #2c3e50; color: white; padding: 80px 0; text-align: center; }
+footer { text-align: center; padding: 30px; background: #1a252f; color: #95a5a6; font-size: 0.9rem; }
+
+@media (max-width: 768px) {
+    .container { width: 90%; }
+    .hero h1 { font-size: 2.5rem; }
 }
