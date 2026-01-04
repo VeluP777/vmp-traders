@@ -1,100 +1,75 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+/* VMP TRADERS - PROFESSIONAL FINAL DESIGN */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-:root {
-    --neon-blue: #00d2ff;
-    --neon-purple: #9d50bb;
-    --neon-green: #39ff14;
-    --neon-orange: #ff9900;
-    --dark-bg: #050505;
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    line-height: 1.6;
+    background-color: #fff;
 }
 
-body { background: var(--dark-bg); color: white; scroll-behavior: smooth; }
+.container { width: 90%; max-width: 1100px; margin: auto; }
+.section-spacing { padding: 100px 0; }
+.bg-light { background-color: #f8fbff; }
 
-/* Hero Hierarchy Adjustments */
-.brand-name { 
-    font-size: 6rem; /* Bigger size as requested */
-    font-weight: 900;
-    letter-spacing: 5px;
-    background: linear-gradient(to right, #fff, var(--neon-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0;
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(10, 30, 60, 0.9), rgba(10, 30, 60, 0.9)), 
+                url('https://images.unsplash.com/photo-1558442086-8ea19a79cd4d?q=80&w=1500');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
 }
 
-.sub-heading {
-    font-size: 1.5rem; /* Reduced size as requested */
-    color: var(--neon-blue);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-}
+.logo-large { font-size: 5.5rem; font-weight: 800; letter-spacing: 5px; line-height: 1; }
+.logo-large span { color: #f1c40f; }
 
-/* Colorful Material Cards */
-.service-card.plastic { border-bottom: 5px solid var(--neon-green); }
-.service-card.solar { border-bottom: 5px solid var(--neon-blue); }
-.service-card.metal { border-bottom: 5px solid var(--neon-purple); }
+/* Subtle leading statement */
+.sub-statement { font-size: 1.1rem; opacity: 0.7; letter-spacing: 3px; margin-top: 10px; text-transform: uppercase; }
 
-.service-card.plastic h3 { color: var(--neon-green); }
-.service-card.solar h3 { color: var(--neon-blue); }
-.service-card.metal h3 { color: var(--neon-purple); }
+.nav-address { font-weight: 600; font-size: 1.1rem; color: #f1c40f; margin: 20px 0 40px 0; }
 
-/* Vibrant Contact Us Section */
-.contact {
-    padding: 8rem 10%;
-    background: linear-gradient(to top, #0a0a0c, #16213e); /* Adds color to the bottom */
-}
+.founder-badge { font-size: 1.2rem; margin-bottom: 30px; display: inline-block; background: rgba(255,255,255,0.1); padding: 8px 25px; border-radius: 50px; }
 
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 4rem;
-    border-radius: 30px;
-    border: 1px solid var(--neon-blue);
-    box-shadow: 0 0 50px rgba(0, 210, 255, 0.1);
-    position: relative;
-    overflow: hidden;
-}
+/* Buttons */
+.cta-group { display: flex; justify-content: center; gap: 20px; }
+.btn { padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; }
+.btn-primary { background-color: #25d366; color: #fff; }
+.btn-secondary { background-color: #f1c40f; color: #000; }
+.btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
 
-.contact-info h2 {
-    font-size: 3rem;
-    background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+/* Service Cards */
+.section-title { font-size: 2.5rem; text-align: center; margin-bottom: 60px; font-weight: 700; color: #0f203b; }
+.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.service-card { padding: 50px 30px; background: #fff; border-radius: 20px; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+.s-icon { font-size: 4rem; margin-bottom: 25px; }
 
-.btn-submit {
-    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
-    color: white;
-    padding: 1rem;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 1.1rem;
-}
+.border-blue { border-top: 5px solid #3498db; }
+.border-gold { border-top: 5px solid #f1c40f; }
+.border-green { border-top: 5px solid #2ecc71; }
 
-.btn-submit:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px var(--neon-blue);
-}
+/* Materials */
+.materials-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; margin-bottom: 60px; }
+.m-item { background: #fff; padding: 25px; border-radius: 12px; text-align: center; font-weight: 700; border: 1px solid #eef2f7; }
+.table-container { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.08); }
+.price-table { width: 100%; border-collapse: collapse; }
+.price-table th { background: #0f203b; color: #f1c40f; padding: 25px; text-align: left; }
+.price-table td { padding: 20px; border-bottom: 1px solid #f0f0f0; font-weight: 600; }
 
-/* Placeholder image styling */
-.card-image { height: 200px; background-size: cover; background-position: center; }
-.plastic-img { background-image: url('https://images.unsplash.com/photo-1595273670150-db0a3d39d444?auto=format&fit=crop&w=600'); }
-.solar-img { background-image: url('https://images.unsplash.com/photo-1509391366360-fe5bb5843e0c?auto=format&fit=crop&w=600'); }
-.tech-img { background-image: url('https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600'); }
+/* VIBRANT CONTACT SECTION */
+.contact-vibrant { background-color: #f1f3f6; }
+.contact-card { background: linear-gradient(135deg, #0f203b 0%, #2980b9 100%); padding: 80px 40px; border-radius: 30px; color: white; text-align: center; }
+.white-text { color: white !important; }
+.contact-info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 40px; }
+.info-item { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; }
+.info-icon { font-size: 2.5rem; display: block; margin-bottom: 15px; }
 
-/* Fixed spelling context in CSS animations/titles */
-.section-title {
-    text-align: center; font-size: 3rem; margin-bottom: 3rem;
-    color: white;
-}
+/* Footer */
+footer { background: #0f203b; color: #94a3b8; text-align: center; padding: 50px 0; border-top: 1px solid #1a3052; }
 
 @media (max-width: 768px) {
-    .brand-name { font-size: 3.5rem; }
-    .contact-container { grid-template-columns: 1fr; }
+    .logo-large { font-size: 3.5rem; }
+    .cta-group { flex-direction: column; }
 }
