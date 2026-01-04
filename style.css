@@ -8,11 +8,11 @@ body {
 }
 
 .container { width: 85%; max-width: 1100px; margin: auto; }
-.section-padding { padding: 90px 0; }
+.section-padding { padding: 80px 0; }
 .bg-gray { background-color: #f9f9f9; }
 .text-center { text-align: center; }
 
-/* Header - Clean Industrial Blue */
+/* Header Setup */
 .hero {
     background: linear-gradient(rgba(10, 30, 60, 0.9), rgba(10, 30, 60, 0.9)), 
                 url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1500');
@@ -23,49 +23,65 @@ body {
     text-align: center;
 }
 
-/* VMP Traders Size */
-.hero h1 { font-size: 3.8rem; font-weight: 700; letter-spacing: 2px; }
-.hero h1 span { color: #f1c40f; }
+/* VMP Traders - Large but professional size */
+.logo-text { font-size: 3.5rem; font-weight: 700; letter-spacing: 2px; line-height: 1.2; }
+.logo-text span { color: #f1c40f; }
 
-/* Sub-statement Size */
-.sub-statement { font-size: 1.3rem; color: #f1c40f; margin-top: 5px; font-weight: 400; opacity: 0.9; }
+/* Sub-statement - Prominent but smaller */
+.sub-statement { font-size: 1.4rem; margin-top: 10px; font-weight: 600; letter-spacing: 1px; }
+.white-text { color: #ffffff; }
+.yellow-text { color: #f1c40f; }
 
-.nav-address { font-size: 1.1rem; margin: 15px 0 20px 0; opacity: 0.8; }
-.founder-text { font-size: 1.2rem; margin-bottom: 10px; }
+.nav-address { font-size: 1.1rem; margin: 10px 0 20px 0; opacity: 0.8; }
+.founder-text { font-size: 1.2rem; margin-bottom: 5px; }
+.hero-value-statement { font-size: 1.1rem; max-width: 650px; margin: 0 auto 35px; opacity: 0.9; }
 
-/* The honesty statement */
-.hero-value-statement { font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px; opacity: 0.9; font-style: italic; }
-
-/* Buttons */
+/* Modern Rounded Buttons */
 .cta-wrap { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.btn-wa, .btn-call { padding: 16px 35px; border-radius: 5px; text-decoration: none; font-weight: 700; transition: 0.3s; }
+.btn-wa, .btn-call { 
+    padding: 15px 35px; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    font-weight: 700; 
+    transition: 0.3s; 
+}
 .btn-wa { background: #25d366; color: #fff; }
 .btn-call { background: #f1c40f; color: #000; }
+.btn-wa:hover, .btn-call:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+/* Centered Headings - No Underline */
+.title-center { 
+    text-align: center; 
+    font-size: 2.2rem; 
+    margin-bottom: 50px; 
+    color: #1a1a1a; 
+    font-weight: 700;
+}
 
 /* Service Cards */
-.title-center { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #1a1a1a; border-bottom: 3px solid #f1c40f; display: inline-block; padding-bottom: 10px; }
 .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-.service-card { padding: 40px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+.service-card { padding: 40px; background: #fff; border-radius: 12px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
 .icon { font-size: 3rem; margin-bottom: 15px; }
 .blue-top { border-top: 5px solid #3498db; }
 .gold-top { border-top: 5px solid #f1c40f; }
 .green-top { border-top: 5px solid #2ecc71; }
 
-/* Materials */
+/* Tables and Pills */
 .mat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 50px; }
-.mat-pill { background: #fff; padding: 15px; text-align: center; font-weight: 600; border: 1px solid #eee; border-radius: 4px; }
+.mat-pill { background: #fff; padding: 15px; text-align: center; font-weight: 600; border: 1px solid #eee; border-radius: 8px; }
 .table-wrap { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 .data-table { width: 100%; border-collapse: collapse; }
 .data-table th { background: #0a1e3c; color: #f1c40f; padding: 20px; text-align: left; }
 .data-table td { padding: 15px; border-bottom: 1px solid #eee; font-weight: 600; }
 
-/* Contact Section - Vertical Setup */
-.contact-box-vertical { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 20px; }
-.contact-item { width: 100%; max-width: 400px; padding: 15px; background: #f9f9f9; border-radius: 5px; }
+/* Vertical Contact Details */
+.contact-box-vertical { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 20px; }
+.contact-item { width: 100%; max-width: 450px; padding: 12px; background: #f9f9f9; border-radius: 10px; text-align: center; }
 .contact-item p { font-size: 1.2rem; color: #333; }
 
 footer { background: #0a1e3c; color: #888; text-align: center; padding: 40px 0; font-size: 0.9rem; }
 
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
+    .logo-text { font-size: 2.5rem; }
+    .sub-statement { font-size: 1.2rem; }
 }
