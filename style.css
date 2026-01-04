@@ -12,7 +12,7 @@ body {
 .bg-gray { background-color: #f9f9f9; }
 .text-center { text-align: center; }
 
-/* Header Design */
+/* Hero Section */
 .hero {
     background: linear-gradient(rgba(10, 30, 60, 0.9), rgba(10, 30, 60, 0.9)), 
                 url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1500');
@@ -26,15 +26,15 @@ body {
 .logo-text { font-size: 3.5rem; font-weight: 700; letter-spacing: 2px; line-height: 1.2; }
 .logo-text span { color: #f1c40f; }
 
+/* Sub-statement - Full Yellow */
 .sub-statement { font-size: 1.4rem; margin-top: 10px; font-weight: 600; letter-spacing: 1px; }
-.white-text { color: #ffffff; }
 .yellow-text { color: #f1c40f; }
 
 .nav-address { font-size: 1.1rem; margin: 10px 0 20px 0; opacity: 0.8; }
 .founder-text { font-size: 1.2rem; margin-bottom: 5px; }
 .hero-value-statement { font-size: 1.1rem; max-width: 650px; margin: 0 auto 35px; opacity: 0.9; }
 
-/* Buttons */
+/* Rounded Buttons */
 .cta-wrap { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .btn-wa, .btn-call { 
     padding: 15px 35px; 
@@ -45,14 +45,17 @@ body {
 }
 .btn-wa { background: #25d366; color: #fff; }
 .btn-call { background: #f1c40f; color: #000; }
+.btn-wa:hover, .btn-call:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
-/* Center Headings */
+/* Center Headings - Underlined Yellow */
 .title-center { 
-    text-align: center; 
     font-size: 2.2rem; 
     margin-bottom: 50px; 
     color: #1a1a1a; 
     font-weight: 700;
+    display: inline-block;
+    border-bottom: 4px solid #f1c40f;
+    padding-bottom: 8px;
 }
 
 /* Service Cards */
@@ -63,19 +66,18 @@ body {
 .gold-top { border-top: 5px solid #f1c40f; }
 .green-top { border-top: 5px solid #2ecc71; }
 
-/* Materials Grid */
+/* Materials and Table */
 .mat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; margin-bottom: 50px; }
 .mat-pill { background: #fff; padding: 15px; text-align: center; font-weight: 600; border: 1px solid #eee; border-radius: 8px; }
-
-/* Table Style */
 .table-wrap { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 .data-table { width: 100%; border-collapse: collapse; }
 .data-table th { background: #0a1e3c; color: #f1c40f; padding: 20px; text-align: left; }
 .data-table td { padding: 15px; border-bottom: 1px solid #eee; font-weight: 600; }
 
-/* Vertical Contact */
+/* Contact Section - Normal Medium Size */
 .contact-box-vertical { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 20px; }
 .contact-item { width: 100%; max-width: 450px; padding: 12px; background: #f9f9f9; border-radius: 10px; text-align: center; }
+.contact-item p { font-size: 1.15rem; color: #333; }
 
 footer { background: #0a1e3c; color: #888; text-align: center; padding: 40px 0; font-size: 0.9rem; }
 
