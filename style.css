@@ -1,97 +1,100 @@
-/* VMP TRADERS - FINAL PROFESSIONAL STYLE */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #2c3e50;
-    line-height: 1.6;
-    background-color: #fff;
+:root {
+    --neon-blue: #00d2ff;
+    --neon-purple: #9d50bb;
+    --neon-green: #39ff14;
+    --neon-orange: #ff9900;
+    --dark-bg: #050505;
 }
 
-.container { width: 90%; max-width: 1100px; margin: auto; }
-.text-center { text-align: center; }
-.section-spacing { padding: 80px 0; }
-.bg-light { background-color: #f8fbff; }
+body { background: var(--dark-bg); color: white; scroll-behavior: smooth; }
 
-/* Header & Hero */
-.hero {
-    background: linear-gradient(rgba(15, 32, 59, 0.85), rgba(15, 32, 59, 0.85)), 
-                url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1500');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding-bottom: 120px;
+/* Hero Hierarchy Adjustments */
+.brand-name { 
+    font-size: 6rem; /* Bigger size as requested */
+    font-weight: 900;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #fff, var(--neon-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
+.sub-heading {
+    font-size: 1.5rem; /* Reduced size as requested */
+    color: var(--neon-blue);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
 }
 
-.logo { font-size: 1.8rem; font-weight: 700; letter-spacing: 2px; }
-.logo span { color: #f1c40f; }
-.nav-address { font-weight: 600; font-size: 0.9rem; color: #f1c40f; }
+/* Colorful Material Cards */
+.service-card.plastic { border-bottom: 5px solid var(--neon-green); }
+.service-card.solar { border-bottom: 5px solid var(--neon-blue); }
+.service-card.metal { border-bottom: 5px solid var(--neon-purple); }
 
-.hero-content { padding-top: 60px; text-align: center; }
-.founder-name { font-size: 1.2rem; margin-bottom: 10px; color: #f1c40f; font-weight: 600; }
-.hero-content h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
-.highlight { color: #f1c40f; }
-.hero-subtext { font-size: 1.1rem; max-width: 600px; margin: 0 auto 40px; opacity: 0.9; }
+.service-card.plastic h3 { color: var(--neon-green); }
+.service-card.solar h3 { color: var(--neon-blue); }
+.service-card.metal h3 { color: var(--neon-purple); }
 
-/* Buttons */
-.cta-group { display: flex; justify-content: center; gap: 20px; }
-.btn { padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; }
-.btn-primary { background-color: #25d366; color: #fff; }
-.btn-secondary { background-color: #f1c40f; color: #000; }
-.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-
-/* Service Cards */
-.section-title { font-size: 2.2rem; text-align: center; margin-bottom: 50px; font-weight: 700; color: #0f203b; }
-.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.service-card {
-    padding: 40px;
-    background: #fff;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-    border-bottom: 4px solid #f1c40f;
+/* Vibrant Contact Us Section */
+.contact {
+    padding: 8rem 10%;
+    background: linear-gradient(to top, #0a0a0c, #16213e); /* Adds color to the bottom */
 }
-.s-icon { font-size: 3.5rem; margin-bottom: 20px; }
-.service-card h3 { margin-bottom: 15px; font-size: 1.3rem; }
 
-/* Materials Grid */
-.materials-grid {
+.contact-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    margin-bottom: 50px;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4rem;
+    border-radius: 30px;
+    border: 1px solid var(--neon-blue);
+    box-shadow: 0 0 50px rgba(0, 210, 255, 0.1);
+    position: relative;
+    overflow: hidden;
 }
-.m-item {
-    background: #fff;
-    padding: 20px;
+
+.contact-info h2 {
+    font-size: 3rem;
+    background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    color: white;
+    padding: 1rem;
+    border: none;
     border-radius: 10px;
-    text-align: center;
-    font-weight: 700;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-    color: #0f203b;
-    border: 1px solid #eef2f7;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.1rem;
 }
 
-/* Pricing Table */
-.table-container { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-.price-table { width: 100%; border-collapse: collapse; }
-.price-table th { background: #0f203b; color: #f1c40f; padding: 20px; text-align: left; }
-.price-table td { padding: 18px; border-bottom: 1px solid #f0f0f0; font-weight: 600; }
+.btn-submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--neon-blue);
+}
 
-/* Footer */
-.contact-details p { font-size: 1.2rem; margin: 10px 0; }
-footer { background: #0f203b; color: #94a3b8; text-align: center; padding: 40px 0; font-size: 0.9rem; }
+/* Placeholder image styling */
+.card-image { height: 200px; background-size: cover; background-position: center; }
+.plastic-img { background-image: url('https://images.unsplash.com/photo-1595273670150-db0a3d39d444?auto=format&fit=crop&w=600'); }
+.solar-img { background-image: url('https://images.unsplash.com/photo-1509391366360-fe5bb5843e0c?auto=format&fit=crop&w=600'); }
+.tech-img { background-image: url('https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600'); }
 
-/* Responsive */
+/* Fixed spelling context in CSS animations/titles */
+.section-title {
+    text-align: center; font-size: 3rem; margin-bottom: 3rem;
+    color: white;
+}
+
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.2rem; }
-    .cta-group { flex-direction: column; }
-    .navbar { flex-direction: column; gap: 10px; }
+    .brand-name { font-size: 3.5rem; }
+    .contact-container { grid-template-columns: 1fr; }
 }
